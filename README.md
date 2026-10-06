@@ -452,7 +452,7 @@ Waste data received
 The LED strip turns green
 Pressing the button turns the LED strip off
 
-<img src="Images/EndResult.png" width="300">
+<img src="Images/EndResult.jpeg" width="300">
 
 The led will only turn on if its close to put the trash outside.
 
