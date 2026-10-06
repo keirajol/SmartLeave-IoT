@@ -70,8 +70,8 @@ Upload this quick test sketch:
 ```ruby
 #include <Adafruit_NeoPixel.h>
 
-#define LED_PIN D2
-#define LED_COUNT 8
+#define LED_PIN 4
+#define LED_COUNT 30
 
 Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
 
