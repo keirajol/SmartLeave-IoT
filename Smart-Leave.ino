@@ -3,12 +3,12 @@
 #include <ArduinoJson.h>
 #include <Adafruit_NeoPixel.h>
 
-// ---------- SETTINGS ----------
+// SETTINGS
 const char* WIFI_SSID = "YOUR_WIFI_NAME";
 const char* WIFI_PASSWORD = "YOUR_WIFI_PASSWORD";
 const char* API_KEY = "YOUR_OPENWEATHER_API_KEY";
 
-// Example: Amsterdam. Change these coordinates to the location you want to use.
+// Amsterdam, Change these coordinates to the location you want to use.
 const float LATITUDE = 52.3676;
 const float LONGITUDE = 4.9041;
 
@@ -17,8 +17,7 @@ const float LONGITUDE = 4.9041;
 #define LED_COUNT 30
 #define LED_BRIGHTNESS 80
 
-// OpenWeather recommends avoiding unnecessarily frequent calls.
-// Ten minutes is enough for this reminder prototype.
+// Ten minutes 
 const unsigned long UPDATE_INTERVAL = 10UL * 60UL * 1000UL;
 
 WiFiClientSecure client;
@@ -51,14 +50,15 @@ void connectWiFi() {
   Serial.println("\nWi-Fi connected");
 }
 
-// Checks the next 6 hours (two 3-hour forecast blocks).
+// source: chatGPT
+// Checks the next 6 hours 
 // Returns true when OpenWeather predicts Rain, Drizzle or Thunderstorm.
 bool rainExpectedSoon() {
   if (WiFi.status() != WL_CONNECTED) {
     connectWiFi();
   }
 
-  client.setInsecure(); // Simple prototype: HTTPS without certificate validation.
+  client.setInsecure(); 
 
   String url = "/data/2.5/forecast?lat=" + String(LATITUDE, 4) +
                "&lon=" + String(LONGITUDE, 4) +
@@ -86,7 +86,6 @@ bool rainExpectedSoon() {
     delay(10);
   }
 
-  // Skip HTTP headers.
   while (client.connected()) {
     String line = client.readStringUntil('\n');
     if (line == "\r") break;
@@ -154,7 +153,7 @@ void setup() {
 
   connectWiFi();
 
-  // Check immediately after startup.
+  // Check after startup.
   updateReminder();
   lastWeatherCheck = millis();
 }
