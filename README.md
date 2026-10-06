@@ -179,7 +179,7 @@ If you push the button the led should go on and off.
 
 ## Step 2:API access
 
-Smart leave uses the Amsterdam data API to retrieve the weather data. To access the API an API key is required.
+Smart Leave uses the OpenWeather API to retrieve current and forecast weather data. An API key is required to access the API.
 
 Register a client at:
 https://openweathermap.org
