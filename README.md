@@ -223,11 +223,27 @@ If Arduino gives an error like:
 it means the library is not installed correctly.
 
 ## Step 4: The code
-And now the hard the code. This part took a long time, but in the manual I will just post the full code below. You can copy everything, just change these 3 things:
-1. char ssid[] = "WIFI_NAME"; / place your wifi name
-2. char pass[] = "WIFI_PASSWORD"; // place your wifi password
-3. const char* API_KEY = "API_KEY_HERE"; // place your API key
+And now the hard the code. This part took a long time, but in the manual I will just post the full code below. You can copy everything, just change these things:
 
+```cpp
+const char* WIFI_SSID = "YOUR_WIFI_NAME";
+const char* WIFI_PASSWORD = "YOUR_WIFI_PASSWORD";
+const char* API_KEY = "YOUR_OPENWEATHER_API_KEY";
+
+const float LATITUDE = 52.3676;
+const float LONGITUDE = 4.9041;
+```
+
+### What the code does
+
+1. Connects the ESP8266 to Wi-Fi.
+2. Requests OpenWeather forecast data.
+3. Reads the next two 3-hour forecast blocks.
+4. Checks for `Rain`, `Drizzle` or `Thunderstorm`.
+5. If rain is expected, the LED strip turns blue.
+6. The user presses the physical button after seeing the reminder.
+7. The blue light turns off and stays acknowledged while the rain condition remains active.
+8. The weather is checked again every ten minutes.
 Create a new Arduino sketch and paste everything below.
 
 ```ruby
