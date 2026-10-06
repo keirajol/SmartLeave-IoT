@@ -3,22 +3,23 @@
 
 ## Introduction
 
-Smart Trash is an IoT-based reminder system that helps households remember waste collection days.
-The system retrieves waste collection data from an online API and translates this information into a physical reminder inside the home.
+Smart Leave is an IoT weather reminder that helps users prepare for the weather before leaving home. The system retrieves current weather data from the OpenWeather API and translates this information into a simple physical reminder.
 
-When a waste collection day is approaching, the device lights up in a specific color that represents the type of waste. 
-The reminder stays active until the user presses a physical button to confirm that the waste has been taken outside.
+When rain is expected, the device lights up blue. This gives the user a quick reminder to take an umbrella without having to check a weather app. After seeing the reminder, the user can press the physical button to confirm it. The light then turns off.
+
+The prototype focuses on the main interaction of Smart Leave: retrieving weather data, translating this data into a physical light signal and allowing the user to respond using the button.
 
 ### The manual is divided into 5 steps
-1. Connecting the LED strip and button  
-2. Setting up the Waste Calendar API  
-3. Installing libraries  
-4. Writing the code  
-5. Uploading and testing the prototype  
+
+1. Connecting the LED strip and button
+2. Setting up the OpenWeather API
+3. Installing the required libraries
+4. Writing and configuring the code
+5. Uploading and testing the prototype
 
 ## Prerequisites
 
-When following this manual, I assume that you have the following hardware & software installed. If this is not the case, please set-up your Microcontroller correctly before following this manual.
+When following this manual I assume that you have the following hardware & software installed. If this is not the case, please set up your Microcontroller correctly before following this manual.
 
 ### Hardware
 - NodeMCU ESP8266 Microcontroller (or similar board)
@@ -35,7 +36,7 @@ When following this manual, I assume that you have the following hardware & soft
 
 ### Required Libraries
 
-Install these libraries using Arduino IDE - Library Manager:
+Install these libraries using Arduino IDE, Library Manager:
 - ArduinoJson
 - Adafruit NeoPixel
 
