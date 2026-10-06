@@ -184,7 +184,7 @@ Smart leave uses the Amsterdam data API to retrieve the weather data. To access 
 Register a client at:
 https://openweathermap.org
 
-<img src="Images/APIgegevens.png" width="300">
+<img src="Images/API-account.jpeg" width="300">
 
 kopieer de volledige code.
 <img src="Images/APIkey" width="300">
