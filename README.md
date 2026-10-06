@@ -447,15 +447,9 @@ Open Serial Monitor
 
 After connecting to Wi-Fi the Serial Monitor prints:
 
-WiFi connected
-Waste data received 
-The LED strip turns green
-Pressing the button turns the LED strip off
-
 <img src="Images/EndResult.jpeg" width="300">
 
-The led will only turn on if its close to put the trash outside.
-
+Pressing the button turns the LED strip off
 If this works: the prototype works!
 
 <img src="Images/welldone.gif" width="300">
