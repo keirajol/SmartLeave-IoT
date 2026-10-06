@@ -1,4 +1,4 @@
-# smart-trash
+# smart-leave
 <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/58973aea-d865-45e7-81ab-87fa1e084e8b" />
 
 ## Introduction
