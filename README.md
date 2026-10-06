@@ -215,7 +215,7 @@ These libraries are required for:
 - Reading JSON data from the API
 - Controlling the LED strip
 
-<img src="Images/libaries.png" width="300">
+<img src="Images/Libaries.png" width="300">
 
 If Arduino gives an error like:
 - ArduinoJson.h: No such file or directory
