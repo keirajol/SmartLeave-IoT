@@ -187,7 +187,7 @@ https://openweathermap.org
 <img src="Images/API-account.jpeg" width="300">
 
 kopieer de volledige code.
-<img src="Images/APIkey" width="300">
+<img src="Images/APIkey2.jpeg" width="300">
 
 Never commit your API key to GitHub!!!
 
