@@ -450,6 +450,7 @@ After connecting to Wi-Fi the Serial Monitor prints:
 <img src="Images/EndResult.jpeg" width="300">
 
 Pressing the button turns the LED strip off
+
 If this works: the prototype works!
 
 <img src="Images/welldone.gif" width="300">
