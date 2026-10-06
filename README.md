@@ -455,6 +455,8 @@ If this works: the prototype works!
 
 <img src="Images/welldone.gif" width="300">
 
+The prototype demonstrates the rain scenario of Smart Leave. The complete concept uses different colors for different weather conditions, but this technical prototype focuses on rain detection and the blue light reminder.
 
+Translated by: chatGPT
 
 
