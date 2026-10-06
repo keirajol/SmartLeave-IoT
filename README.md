@@ -261,8 +261,8 @@ const char* API_KEY = "YOUR_OPENWEATHER_API_KEY";
 const float LATITUDE = 52.3676;
 const float LONGITUDE = 4.9041;
 
-#define LED_PIN D2
-#define BUTTON_PIN D7
+#define LED_PIN 4
+#define BUTTON_PIN 13
 #define LED_COUNT 30
 #define LED_BRIGHTNESS 80
 
