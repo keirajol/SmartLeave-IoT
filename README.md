@@ -179,12 +179,12 @@ If you push the button the led should go on and off.
 
 ## Step 2:API access
 
-Smart Trash uses the Amsterdam data API to retrieve waste collection data. To access the API, an API key is required.
+Smart leave uses the Amsterdam data API to retrieve the weather data. To access the API an API key is required.
 
 Register a client at:
-https://keys.api.data.amsterdam.nl/clients/v1/register/
+https://openweathermap.org
 
-<img src="Images/APIgegevns.png" width="300">
+<img src="Images/APIgegevens.png" width="300">
 
 kopieer de volledige code.
 <img src="Images/APIkey" width="300">
